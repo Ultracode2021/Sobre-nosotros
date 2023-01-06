@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Balthazar&family=Fjalla+One&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Fjalla One", sans-serif;
+}
+
+li {
+  cursor: pointer;
+  list-style: none;
+}
+
+.promo-bar {
+  width: 100%;
+  height: auto;
+  background-color: #011f45;
+  color: white;
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 0.5fr 0.8fr 3fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas: ". contact . fb-icon ig-icon";
+}
+.contact {
+  width: 200px;
+  grid-area: contact;
+  padding: 15px 0px 8px 30px;
+}
+.fb-icon {
+  background-image: url("https://springmediastrategies.com/wp-content/uploads/2018/12/facebook-icon-white-logo-png-transparent-e1548296645113.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  margin-left: 54px;
+  grid-area: fb-icon;
+}
+.ig-icon {
+  background-image: url("https://tse1.mm.bing.net/th?id=OIP.9US87MJoG5CTRKNSld6w1AHaHa&pid=Api&P=0");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  grid-area: ig-icon;
+}
+.menu-bar {
+  height: 20px;
+  font-family: "Balthazar", serif;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: repeat(7, 1.5fr);
+}
+.box-menu {
+  display: flex;
+  margin: 41px 0px 60px 80px;
+}
+li.second {
+  width: 171px;
+}
+li.third {
+  margin-left: 48px;
+}
+li.fourth {
+  background-image: url("http://damici.co/skins/page/images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 145px;
+  height: 176px;
+  margin-top: -93px;
+}
