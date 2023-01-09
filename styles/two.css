@@ -1,5 +1,43 @@
-.main-announce {
-  width: 100%;
-  height: 533px;
-  object-fit: cover;
+#slider {
+  position: relative;
+  width: 282%;
+  margin: 0;
+  left: 0;
+}
+
+#slider figure {
+  overflow: hidden;
+}
+
+.pic1 {
+  width: 1367px;
+}
+
+a.arrow {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: auto;
+  height: 55px;
+  margin-top: 0px;
+  display: flex;
+  position: absolute;
+  top: 46%;
+  left: 6%;
+  transform: translate(-10%, -50%);
+}
+
+a.arrow-point-right {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: auto;
+  height: 55px;
+  margin-top: 0px;
+  display: flex;
+  position: absolute;
+  top: 35%;
+  left: 91%;
+  transform: translate(-10%, -50%);
+  rotate: 180deg;
 }
