@@ -1,5 +1,64 @@
+.frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.frame-content {
+  width: auto;
+  height: 230px;
+  overflow: hidden;
+}
+.frame-content:hover {
+  filter: brightness(0.4);
+}
+
+.line {
+  display: flex;
+  width: 30px;
+  height: 0.2px;
+  background-color: #011f45;
+  border: 1px #011f45 solid;
+  margin-top: 37px;
+}
+h1 {
+  display: flex;
+  vertical-align: middle;
+  font-family: "Balthazar", serif;
+  color: #df2025;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 20px;
+}
+h2 {
+  display: flex;
+  font-family: "Balthazar", serif;
+  text-transform: uppercase;
+  color: #011f45;
+  font-size: 33px;
+  font-family: "Fjalla One", sans-serif;
+}
+.slogan {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 319px 150px 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "slider-simple"
+    "activities-pizza"
+    "plates-cube";
+  grid-area: second-part;
+}
+
 #slider {
   overflow: hidden;
+  grid-area: slider-simple;
+}
+.descript-act {
+  grid-area: activities-pizza;
 }
 
 #slider figure {
@@ -25,7 +84,7 @@
     left: -100%;
   }
 }
-/*
+/* Icono de un carusel futuro
 a.arrow {
   background-repeat: no-repeat;
   background-position: center;
@@ -40,18 +99,4 @@ a.arrow {
   transform: translate(-10%, -50%);
 }
 
-a.arrow-point-right {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: auto;
-  height: 55px;
-  margin-top: 0px;
-  display: flex;
-  position: absolute;
-  top: 54%;
-  left: 91%;
-  transform: translate(-10%, -50%);
-  rotate: 180deg;
-}
 */

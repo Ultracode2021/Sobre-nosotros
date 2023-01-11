@@ -2,19 +2,32 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 body {
   font-family: "Fjalla One", sans-serif;
+  display: grid;
+  grid-template-rows: 173px 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "first-bar"
+    "second-part"
+    "footer";
 }
-
-li {
-  cursor: pointer;
-  list-style: none;
+.social {
+  grid-area: first-bar;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "promo-one"
+    "list-option";
+  height: 30px;
 }
-
 .promo-bar {
   width: 100%;
-  height: auto;
+  height: 59px;
   background-color: #011f45;
   color: white;
   font-size: 1.2rem;
@@ -22,7 +35,30 @@ li {
   grid-template-columns: 0.5fr 0.8fr 3fr 0.5fr 0.5fr;
   gap: 0px 0px;
   grid-template-areas: ". contact . fb-icon ig-icon";
+  grid-area: promo-one;
 }
+.box-menu {
+  display: flex;
+  margin: 41px 0px 60px 80px;
+  grid-area: list-option;
+}
+.content {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "slider-full"
+    "central-text"
+    "what-we-do"
+    "cube-plates";
+  grid-area: second-part;
+}
+
+li {
+  cursor: pointer;
+  list-style: none;
+}
+
 .contact {
   width: 200px;
   grid-area: contact;
@@ -58,10 +94,7 @@ li {
   display: grid;
   grid-template-columns: repeat(7, 1.5fr);
 }
-.box-menu {
-  display: flex;
-  margin: 41px 0px 60px 80px;
-}
+
 li.second {
   width: 177px;
 }
