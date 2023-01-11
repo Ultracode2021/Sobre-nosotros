@@ -1,0 +1,12 @@
+.unfold-options {
+  grid-area: plates-cube;
+  width: 100%;
+  background-image: url("http://damici.co/skins/page/images/fondo.jpg");
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+.menu-row {
+  margin-left: 101px;
+}
