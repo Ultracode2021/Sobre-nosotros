@@ -1,0 +1,19 @@
+{
+  "name": "React-Brewery",
+  "version": "1.0.0",
+  "description": "Curso de React Avanzado con Miguel Ángel Durán https://platzi.com/clases/1601-react-avanzado/21255-clonando-el-repositorio-e-instalando-webpack/",
+  "main": "index.js",
+  "dependencies": {
+    "wepack-cli": "^0.0.1-security",
+    "webpack": "^5.88.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
